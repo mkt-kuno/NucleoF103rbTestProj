@@ -91,7 +91,7 @@ void setup() {
   // 優先度2 でタスクを作製します
   tsk2 = xTaskCreate(Task2, NULL, configMINIMAL_STACK_SIZE, NULL, 2, &handle2);
   // 優先度3 でタスクを作製します
-  tsk3 = xTaskCreate(Task3, NULL, configMINIMAL_STACK_SIZE, NULL, 3, &handle2);
+  tsk3 = xTaskCreate(Task3, NULL, configMINIMAL_STACK_SIZE, NULL, 3, &handle3);
   // タスクが作成されたか確認します
   if (tsk1 != pdPASS || tsk2 != pdPASS || tsk3 != pdPASS ) {
     Serial.println(F("ERR:タスクが作成できませんでした."));
