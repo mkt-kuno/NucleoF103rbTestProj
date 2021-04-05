@@ -50,21 +50,21 @@ static void Task3(void *arg) {
   lcd.begin( 16, 2 );
   lcd.clear();
   for (;;) {
-    vTaskDelay(2000);//1sec遅延
+    vTaskDelay(2000);//2sec遅延
     lcd.clear();
     lcd.setCursor(0, 0);
     lcd.print("What do you mean");
     lcd.setCursor(0, 1);
     lcd.print(", Doc?          ");
 
-    vTaskDelay(2000);//1sec遅延
+    vTaskDelay(2000);//2sec遅延
     lcd.clear();
     lcd.setCursor(0, 0);
     lcd.print("All best stuff a");
     lcd.setCursor(0, 1);
     lcd.print("re made in Japan");
     
-    vTaskDelay(2000);//1sec遅延
+    vTaskDelay(2000);//2sec遅延
     lcd.clear();
     lcd.setCursor(0, 0);
     lcd.print("Great scott ...!");
